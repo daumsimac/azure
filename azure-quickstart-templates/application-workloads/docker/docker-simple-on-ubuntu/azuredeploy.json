@@ -233,6 +233,9 @@
           "autoUpgradeMinorVersion": true,
           "settings": {
             "docker": {
+              "options": ["-D", "--privileged"]
+            },
+            "compose": {
               "rancher": {
                 "image": "rancher/rancher",
                 "ports": [
@@ -241,9 +244,6 @@
                 ],
                 "volumes": [
                   "/opt/rancher:/var/lib/rancher"
-                ],
-                "options": [
-                  "--privileged"
                 ]
               }
             }
