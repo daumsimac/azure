@@ -234,7 +234,7 @@
           "settings": {
             "compose": {
               "rancher": {
-                "image": "rancher/rancher",
+                "image": "rancher/rancher:latest",
                 "ports": [
                   "80:80",
                   "443:443"
