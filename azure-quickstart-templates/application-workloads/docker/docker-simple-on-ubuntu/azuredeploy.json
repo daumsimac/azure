@@ -230,8 +230,21 @@
           "publisher": "Microsoft.Azure.Extensions",
           "type": "DockerExtension",
           "typeHandlerVersion": "1.0",
-          "autoUpgradeMinorVersion": true
+          "autoUpgradeMinorVersion": true,
+          "settings": {
+            "compose": {
+              "rancher": {
+                "image": "rancher/rancher:stable",
+                "ports": [
+                  "80:80",
+                  "443:443"
+                ],
+                "volumes": [
+                  "/opt/rancher:/var/lib/rancher"
+                ]
+              }
+            }
+          }
         }
-      }
-    ]
-  }
+      }]
+}
