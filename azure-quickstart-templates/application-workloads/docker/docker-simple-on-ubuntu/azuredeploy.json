@@ -232,9 +232,6 @@
           "typeHandlerVersion": "1.0",
           "autoUpgradeMinorVersion": true,
           "settings": {
-            "docker": {
-              "options": ["-D", "--privileged"]
-            },
             "compose": {
               "rancher": {
                 "image": "rancher/rancher",
@@ -244,6 +241,9 @@
                 ],
                 "volumes": [
                   "/opt/rancher:/var/lib/rancher"
+                ],
+                "command": [
+                  "-D", "--privileged"
                 ]
               }
             }
