@@ -241,8 +241,7 @@
                 ],
                 "volumes": [
                   "/opt/rancher:/var/lib/rancher"
-                ],
-                "options": ["--privileged"]
+                ]
               }
             }
           }
